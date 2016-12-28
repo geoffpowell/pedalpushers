@@ -1,0 +1,46 @@
+_model: homepage
+---
+title: 
+---
+text-image-module:
+
+#### text-image-module ####
+heading: About
+----
+text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+----
+image: pizza-plate.jpg
+---
+textmod:
+
+#### text_image_module ####
+heading: Heading
+----
+text: kljasdfkjasdfsd
+----
+image: pizza-plate.jpg
+---
+textimagemodule:
+
+#### text_image_module ####
+heading: About
+----
+text:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit.
+----
+image: pizza-plate.jpg
+----
+image2: bikes.jpg
+----
+heading2: More About
+----
+text2:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit.

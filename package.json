@@ -1,0 +1,11 @@
+{
+  "name": "pedalpushpizza",
+  "version": "1.0.0",
+  "description": "A bootstrap-based theme for lektor.",
+  "author": "Geoff Powell",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}
