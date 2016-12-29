@@ -44,3 +44,35 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit.
+#### specials_module ####
+heading: Daily Specials
+----
+backgroundimage1: salad.jpg
+----
+itemheading1: Green Salad
+----
+itemprice1: $6.50
+----
+itemdescription1: 1 topping slice and 1 topping salad.
+----
+itemtimes1: 11:00am - 3:pm
+----
+backgroundimage2: beer.jpg
+----
+itemheading2: Slice & Pint
+----
+itemprice2: $5.95
+----
+itemdescription2: 1 topping slice and a microbrew.
+----
+itemtimes2: 2:30-6:00pm
+----
+backgroundimage3: pizza-square.jpg
+----
+itemheading3: Night Special
+----
+itemprice3: $5.95
+----
+itemdescription3: 1 topping slice and a microbrew.
+----
+itemtimes3: 7:30 - close
