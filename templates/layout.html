@@ -11,7 +11,13 @@
 
 <body>
   <header>
-    <div class="container-fluid landing">
+    <div class="container-fluid landing"
+          style="background: linear-gradient(
+                rgba(0, 0, 0, 0.65), 
+                rgba(0, 0, 0, 0.65)
+                ), 
+                url('{% block headerbackground %}{% endblock %}');"
+    >
       <nav class="navbar navbar-default">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -35,7 +41,7 @@
       <h1>Pedal Pusher's</h1>
       <div class="flair">
         <span class="estd">est'd</span>
-        <img src="assets/static/img/bike1.png">
+        <img src="{{ '/static/img/bike1.png'|url }}">
         <span class="year">1985</span>
       </div>
     </div><!--end container-->
@@ -66,10 +72,12 @@
             <div class="col-sm-8 text-column">
               <h2>Hours</h2>
                 <dl>
-                  <dt>Monday-Friday:</dt>
-                  <dd>9-5</dd>
-                  <dt>Saturday-Sunday:</dt>
-                  <dd>10-5</dd>
+                  <dt>{% block hoursrange1 %}{% endblock %}</dt>
+                  <dd>{% block hours1 %}{% endblock %}</dd>
+                  <dt>{% block hoursrange2 %}{% endblock %}</dt>
+                  <dd>{% block hours2 %}{% endblock %}</dd>
+                  <dt>{% block hoursrange3 %}{% endblock %}</dt>
+                  <dd>{% block hours3 %}{% endblock %}</dd>
                 </dl>
               <h2>Contact</h2>
                 <dl>

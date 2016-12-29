@@ -1,8 +1,17 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }} | Pedal Pusher Pizza Theme{% endblock %}
+{% block headerbackground %}{{ this.headerbackground }} {% endblock %}
 {% block body %}
   <!-- <h2>{{ this.title }}</h2> -->
   <!-- {{ this.body }} -->
   {{ this.textimagemodule }}
 
 {% endblock %}
+
+{% block hoursrange1 %} {{ this.hoursrange1 }} {% endblock %}
+{% block hours1 %} {{ this.hours1 }} {% endblock %}
+{% block hoursrange2 %} {{ this.hoursrange2 }} {% endblock %}
+{% block hours2 %} {{ this.hours2 }} {% endblock %}
+{% block hoursrange3 %} {{ this.hoursrange3 }} {% endblock %}
+{% block hours3 %} {{ this.hours3 }} {% endblock %}
+

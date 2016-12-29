@@ -1,4 +1,3 @@
-
 <div class="container-fluid">
     <div class="row">
       <div class="col-xs-offset-1 col-xs-22 transparent-inner-container">
@@ -10,7 +9,7 @@
                     style="background-image: url('{{ this.backgroundimage1 }}')">
                 <div class="description-group">
                   <h2>{{ this.itemheading1 }}</h2>
-                  <p class="price">$6.50</p>
+                  <p class="price">{{ this.itemprice1 }}</p>
                   <p class="description">{{ this.itemdescription1 }}</p>
                   <p class="times">{{ this.itemtimes1 }}</p>
                 </div>
@@ -33,7 +32,6 @@
                   <p class="times">{{ this.itemtimes3 }}</p>
                 </div>
               </div><!--end col-->
-              {% include 'blocks/specials_rows.html'%}
             </div>
           </div>
         </div>

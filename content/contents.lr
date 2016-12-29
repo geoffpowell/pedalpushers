@@ -1,36 +1,18 @@
 _model: homepage
 ---
-title: 
----
-text-image-module:
-
-#### text-image-module ####
-heading: About
-----
-text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
-----
-image: pizza-plate.jpg
----
-textmod:
-
-#### text_image_module ####
-heading: Heading
-----
-text: kljasdfkjasdfsd
-----
-image: pizza-plate.jpg
+title: Home
 ---
 textimagemodule:
 
 #### text_image_module ####
-heading: About
+heading: Hello
 ----
 text:
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit.
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 ----
 image: pizza-plate.jpg
 ----
@@ -41,9 +23,9 @@ heading2: More About
 text2:
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit.
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 #### specials_module ####
 heading: Daily Specials
 ----
@@ -55,7 +37,7 @@ itemprice1: $6.50
 ----
 itemdescription1: 1 topping slice and 1 topping salad.
 ----
-itemtimes1: 11:00am - 3:pm
+itemtimes1: 11:00am - 3:p
 ----
 backgroundimage2: beer.jpg
 ----
@@ -73,6 +55,53 @@ itemheading3: Night Special
 ----
 itemprice3: $5.95
 ----
-itemdescription3: 1 topping slice and a microbrew.
+itemdescription3: 1 topping slice and a microbrew
 ----
 itemtimes3: 7:30 - close
+#### full_screen_image_module ####
+backgroundimage: pizza.jpg
+----
+sectionheading: Company Values
+----
+colheading1: Quality
+----
+coltext1:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. 
+
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+----
+colheading2: Local & Sustainable
+----
+coltext2:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+----
+colheading3: Uniqueness
+----
+coltext3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+#### image_text_module ####
+image: outside.jpg
+----
+textheading: Another Module
+----
+text:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+---
+headerbackground: pizza2.jpg
+---
+hours1: 9am - 9pm
+---
+hours2: 8am - 6pm
+---
+hours3: 10am - 6pm
+---
+hoursrange1: Monday - Thursday
+---
+hoursrange2: Friday
+---
+hoursrange3: Saturday - Sunday

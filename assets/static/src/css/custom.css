@@ -73,11 +73,11 @@ li {
 .landing {
   /*background-color: rgba(0, 0, 0, .7);*/
   padding-bottom: 19%;
-  background: linear-gradient(
+  /*background: linear-gradient(
         rgba(0, 0, 0, 0.65), 
         rgba(0, 0, 0, 0.65)
         ), 
-        url('../../img/pizza.jpg');
+        url('../../img/pizza.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
 }
