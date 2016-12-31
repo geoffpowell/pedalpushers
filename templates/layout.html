@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
 </head>
 
+
 <body>
   <header>
     <div class="container-fluid landing"
@@ -16,8 +17,7 @@
                 rgba(0, 0, 0, 0.65), 
                 rgba(0, 0, 0, 0.65)
                 ), 
-                url('{% block headerbackground %}{% endblock %}');"
-    >
+                url('{{ '/pizza2.jpg'|url }}');">
       <nav class="navbar navbar-default">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -30,13 +30,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pizza</a></li>
-            <li><a href="#">Salad</a></li>
-            <li><a href="#">Sides</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="{{ '/'|url }}">
+              {% set root = site.get('/') %}
+              {{ root.title }}
+            </a></li>
+            {% for page in site.get('/').children %}
+              <li><a href="{{ page|url }}">{{ page.title }}</a></li>
+            {% endfor %}
           </ul>
-        </div><!-- /.navbar-collapse -->
+        </div>
       </nav>
       <h1>Pedal Pusher's</h1>
       <div class="flair">
@@ -45,20 +47,7 @@
         <span class="year">1985</span>
       </div>
     </div><!--end container-->
-    <!-- <h1>Pedal Pusher's</h1> -->
-    <!-- <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav> -->
+    
   </header>
 
   {% block body %}
@@ -72,21 +61,17 @@
             <div class="col-sm-8 text-column">
               <h2>Hours</h2>
                 <dl>
-                  <dt>{% block hoursrange1 %}{% endblock %}</dt>
-                  <dd>{% block hours1 %}{% endblock %}</dd>
-                  <dt>{% block hoursrange2 %}{% endblock %}</dt>
-                  <dd>{% block hours2 %}{% endblock %}</dd>
-                  <dt>{% block hoursrange3 %}{% endblock %}</dt>
-                  <dd>{% block hours3 %}{% endblock %}</dd>
+                  <dt>Monday - Friday</dt>
+                  <dd>9am - 5pm</dd>
+                  <dt>Saturday - Sunday</dt>
+                  <dd>9am - 5pm</dd>
                 </dl>
               <h2>Contact</h2>
                 <dl>
-                  <dt>Phone:</dt>
-                  <dd>555-5555</dd>
-                  <dt>Email:</dt>
-                  <dd>something@email.com</dd>
-                  <dt>Email 2:</dt>
-                  <dd>something@email.com</dd>
+                  <dt>phone: </dt>
+                  <dd>555-555-5555</dd>
+                  <dt>email: </dt>
+                  <dd>email@email.com</dd>
                 </dl>
             </div><!--end column-->
             <div class="col-sm-8 text-column">
@@ -95,21 +80,23 @@
             </div><!--end column-->
             <div class="col-sm-8 text-column">
               <h2>Location</h2>
-              <dl> 
+              <dl>
                 <dt>Main Address:</dt>
                 <dd>
                   <address>
                     <span id="street">1000 Address St</span><br>
-                    <span id="city">Corvallis,</span><span id="state">OR</span><br>
-                    <span id="zip">97330</span>
-                  </address>
+                    <span id="city">Corvallis</span> <span id="state">OR</span>
+                    <br>
+                    <span id="zip">97330</span></address>
                 </dd>
               </dl>
               <h2>Social Media</h2>
                 <ul>
-                  <li><a href="https://facebook.com/">Facebook</a></li>
-                  <li><a href="https://twitter.com/">Twitter</a></li>
-                  <li><a href="https://www.instagram.com/">Instagram</a></li>
+                  <li>
+                    <a href="https://facebook.com" 
+                      target="_blank">Facebook
+                    </a>
+                  </li>
                 </ul>
             </div><!--end column-->
           </div><!--end row-->
@@ -125,7 +112,7 @@
       </div><!--end outer row-->
     </div><!--end container-->
   </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/static/src/js/bootstrap.min.js"></script>
-  <script src="assets/static/src/js/app.js"></script>
+  <script src="{{ '/static/js/pedalpush.js'|url }}"></script>
 </body>

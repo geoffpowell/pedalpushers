@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         dest: 'assets/static/css/style.css',
       },
       js: {
-        src: ['assets/static/src/js/bootstrap.js', 'assets/static/src/app.js'],
+        src: ['assets/static/src/js/bootstrap.js', 'assets/static/src/js/app.js'],
         dest: 'assets/static/js/pedalpush.js',
       },
     },

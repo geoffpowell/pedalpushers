@@ -1,0 +1,71 @@
+_model: menu_page
+---
+title: Salad Menu
+---
+menu:
+
+#### menu_rows ####
+item1: Green Salad
+----
+price1: $5.00
+----
+description1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+----
+item2: Cheese Salad
+----
+price2: $5.79
+----
+description2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+----
+item3: Spinach Salad
+----
+price3: $5.25
+----
+description3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+#### menu_rows ####
+item1: Another Salad
+----
+price1: $6.00
+----
+description1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+----
+item2: Chicken Salad
+----
+price2: $10.00
+----
+description2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+----
+item3: 
+----
+price3: 
+----
+description3: 
+---
+popular_items:
+
+#### popular_items ####
+item1: Green Salad
+----
+backgroundimage1: salad.jpg
+----
+itemprice1: $5.50
+----
+itemdescription1: 1 topping slice and 1 topping salad.
+----
+item2: Chicken Salad
+----
+backgroundimage2: beer.jpg
+----
+itemprice2: $5.95
+----
+itemdescription2: 1 topping slice and a microbrew.
+----
+item3: Other Salad
+----
+backgroundimage3: pizza-square.jpg
+----
+itemprice3: $6.00
+----
+itemdescription3: 1 topping slice and a microbrew.
+---
+popular_items_heading: Popular Salads

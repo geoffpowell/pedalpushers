@@ -176,8 +176,10 @@ li {
   text-align: center;
 }
 
-.visbox-group {
+.visbox-group:first-child {
   margin-top: 4.2%;
+}
+.visbox-group:last-child {
   margin-bottom: 8.4%;
 }
 

@@ -2,7 +2,7 @@ _model: homepage
 ---
 title: Home
 ---
-textimagemodule:
+sections:
 
 #### text_image_module ####
 heading: Hello
@@ -105,3 +105,34 @@ hoursrange1: Monday - Thursday
 hoursrange2: Friday
 ---
 hoursrange3: Saturday - Sunday
+---
+footerhours:
+
+#### footer_hours ####
+hoursdays: Monday - Thursday
+----
+hoursrange: 10am - 5pm
+---
+footer_hours:
+
+#### footer_hours ####
+hoursdays: Monday - Thru
+----
+hoursrange: 10 - 8
+---
+hoursrange:
+
+#### footer_hours ####
+hoursdays: sdsdg
+----
+hoursrange: dfgdfg
+---
+hoursdays: 
+---
+contacttype: 
+---
+addresstitle: 
+---
+socialmedia: 
+---
+turds: Finely crafted
