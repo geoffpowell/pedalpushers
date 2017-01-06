@@ -111,7 +111,15 @@ footerhours:
 #### footer_hours ####
 hoursdays: Monday - Thursday
 ----
-hoursrange: 10am - 5pm
+hoursrange: 6am - 9pm
+#### footer_hours ####
+hoursdays: Friday
+----
+hoursrange: 8am - 8pm
+#### footer_hours ####
+hoursdays: Saturday - Sunday
+----
+hoursrange: 10am - 6pm
 ---
 footer_hours:
 
@@ -136,3 +144,44 @@ addresstitle:
 socialmedia: 
 ---
 turds: Finely crafted
+---
+headerthing: pizza2.jpg
+---
+footercontact:
+
+#### footer_contact ####
+contacttype: Phone
+----
+contact: 555-555-5555
+#### footer_contact ####
+contacttype: Email
+----
+contact: email@email.com
+---
+footeraddresses:
+
+#### footer_addresses ####
+addresstitle: Main Address
+----
+street: 1000 Address St
+----
+city: Corvallis
+----
+state: OR
+----
+zip: 97330
+---
+footersocialmedia:
+
+#### footer_social_media ####
+socialmedia: Facebook
+----
+socialmedialink: https://facebook.com
+#### footer_social_media ####
+socialmedia: Instagram
+----
+socialmedialink: https://instagram.com
+#### footer_social_media ####
+socialmedia: Twitter
+----
+socialmedialink: https://twitter.com

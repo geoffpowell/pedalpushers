@@ -12,12 +12,13 @@
 
 <body>
   <header>
+    {% set root = site.get('/') %}
     <div class="container-fluid landing"
           style="background: linear-gradient(
                 rgba(0, 0, 0, 0.65), 
                 rgba(0, 0, 0, 0.65)
                 ), 
-                url('{{ '/pizza2.jpg'|url }}');">
+                url('/{{ root.headerthing }}');">
       <nav class="navbar navbar-default">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -30,8 +31,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="{{ '/'|url }}">
-              {% set root = site.get('/') %}
+            <li><a href="{{ '/'|url }}">  
               {{ root.title }}
             </a></li>
             {% for page in site.get('/').children %}
@@ -61,17 +61,11 @@
             <div class="col-sm-8 text-column">
               <h2>Hours</h2>
                 <dl>
-                  <dt>Monday - Friday</dt>
-                  <dd>9am - 5pm</dd>
-                  <dt>Saturday - Sunday</dt>
-                  <dd>9am - 5pm</dd>
+                  {{ root.footerhours }} 
                 </dl>
               <h2>Contact</h2>
                 <dl>
-                  <dt>phone: </dt>
-                  <dd>555-555-5555</dd>
-                  <dt>email: </dt>
-                  <dd>email@email.com</dd>
+                  {{ root.footercontact }}
                 </dl>
             </div><!--end column-->
             <div class="col-sm-8 text-column">
@@ -81,22 +75,12 @@
             <div class="col-sm-8 text-column">
               <h2>Location</h2>
               <dl>
-                <dt>Main Address:</dt>
-                <dd>
-                  <address>
-                    <span id="street">1000 Address St</span><br>
-                    <span id="city">Corvallis</span> <span id="state">OR</span>
-                    <br>
-                    <span id="zip">97330</span></address>
-                </dd>
+                {{ root.footeraddresses }}
+
               </dl>
               <h2>Social Media</h2>
                 <ul>
-                  <li>
-                    <a href="https://facebook.com" 
-                      target="_blank">Facebook
-                    </a>
-                  </li>
+                  {{ root.footersocialmedia }}
                 </ul>
             </div><!--end column-->
           </div><!--end row-->
