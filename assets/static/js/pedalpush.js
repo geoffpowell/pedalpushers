@@ -292,25 +292,20 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-$(document).ready(function(){
+function resetBoxHeights() {
+  if ($(window).width() >= 1199) {
+    $.each($(".white-container-padding"), function(){
+      var newHeight = $(this).parent('.row').height();
+      var containerWidth = $(".col-xs-22").width();
+      var paddingInPx = .042 * containerWidth;
+      newHeight = newHeight - 2 * paddingInPx;
+      $(this).height(newHeight);
+    });
+  } else return false;
+}
 
-  //set a min height of the text box based on the content that's in it.
-  //what is the height of outline?
-  console.log($('.white-inner-container').height());
-
-  //pull height of text to the height of its sibling img.
-  // var innerContainerImgHeightLandscape = $(".white-inner-container img.landscape").height();
-  // var parentsLandscape = $(".white-inner-container img.landscape")
-  //                         .parents(".white-inner-container");
-  // var whiteContainerPaddingLandscape = parentsLandscape.find(".white-container-padding");
-  // whiteContainerPaddingLandscape.css('height', innerContainerImgHeightLandscape);
-
-  // var innerContainerImgHeightPortfolio = $(".white-inner-container img.portfolio").height();
-  // var parentsPortfolio = $(".white-inner-container img.portfolio")
-  //                           .parents(".white-inner-container");
-  // var whiteContainerPaddingPortfolio = parentsPortfolio.find(".white-container-padding");
-  //  whiteContainerPaddingPortfolio.css('height', innerContainerImgHeightPortfolio);
-
+$(window).load(function(){
+  resetBoxHeights();
   //visbox hover stuff
   $(".vis-box").hover(function(){
     var thisVisGroup = $(this).children('.description-group');
